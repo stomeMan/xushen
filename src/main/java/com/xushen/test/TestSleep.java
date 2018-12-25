@@ -12,9 +12,13 @@ import java.util.HashMap;
 public class TestSleep {
 
 
+<<<<<<< HEAD
     public static void main(String[] args) {
         HashMap map=new HashMap();
     }
+=======
+
+>>>>>>> 0aa9c49e5c6dd1206c8ba805add91f0ef7281f74
 
 
 }
