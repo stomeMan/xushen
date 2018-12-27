@@ -11,19 +11,22 @@ import java.util.Optional;
  *@author gaohailiang
  *@date created on 2018/7/18
  */
-public class TestList {
+public class TestStreamList {
     public static void main(String[] args) {
-<<<<<<< HEAD
-=======
        int i=10;
        i=i>>1;
         System.out.println(i);
     }
 
     public void sss(){
->>>>>>> 0aa9c49e5c6dd1206c8ba805add91f0ef7281f74
+
         Arrays.asList( "a", "b", "d" ).sort( (e1, e2) -> e1.compareTo( e2 ) );
-        Arrays.asList( "a", "b", "d" ).forEach( e -> System.out.println( e ) );
+        Arrays.asList( "a", "b", "d" ).forEach(
+                e ->{
+                    System.out.println( e );
+                }
+
+        );
         Arrays.asList( "a", "b", "d" ).forEach( ( String e ) -> System.out.println( e ) );
         HashMap map=new HashMap();
         Arrays.asList( "a", "b", "d" ).parallelStream().forEach(sss->{

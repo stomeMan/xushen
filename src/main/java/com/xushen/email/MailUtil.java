@@ -1,5 +1,6 @@
 package com.xushen.email;
 
+
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.HtmlEmail;
