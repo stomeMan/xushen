@@ -14,6 +14,7 @@ public class TestSleep {
 
     public static void main(String[] args) {
         HashMap map=new HashMap();
+        String s=new String ();
     }
 
 
