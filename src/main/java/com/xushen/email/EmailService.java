@@ -5,6 +5,8 @@ package com.xushen.email;/**
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
+import org.apache.log4j.Logger;
+import org.springframework.stereotype.Service;
 
 import java.io.InputStream;
 import java.time.LocalDateTime;
@@ -15,7 +17,9 @@ import java.time.format.DateTimeFormatter;
  *@date created on 2018/7/18
  */
 @Slf4j
-public class EmailTest {
+@Service
+public class EmailService {
+    private Logger log=Logger.getLogger(EmailService.class);
     public void sendEmail(String... receivers) {
         InputStream in = null;
         try {

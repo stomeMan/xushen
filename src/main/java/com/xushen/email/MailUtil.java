@@ -4,6 +4,7 @@ package com.xushen.email;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.HtmlEmail;
+import org.apache.log4j.Logger;
 
 import java.util.Arrays;
 
@@ -15,6 +16,7 @@ import java.util.Arrays;
  */
 @Slf4j
 public class MailUtil {
+    private static Logger log=Logger.getLogger(MailUtil.class);
 
 //    private static AlarmProperties alarmProperties = ApplicationContextUtils
 //            .getBean("alarmProperties", AlarmProperties.class);
