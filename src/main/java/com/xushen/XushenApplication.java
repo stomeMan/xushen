@@ -1,16 +1,12 @@
 package com.xushen;
 
 //import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ImportResource;
-import org.springframework.scheduling.annotation.EnableAsync;
 
-import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -19,9 +15,7 @@ import java.util.List;
 @SpringBootApplication
 @ServletComponentScan
 //@MapperScan(basePackages = {"com.shenma.run.cron.mapper"})
-@ImportResource(value = {
-        "classpath:/spring/dubbo-consumer.xml"
-})
+@ImportResource
 public class XushenApplication extends SpringBootServletInitializer {
 
     @Override
